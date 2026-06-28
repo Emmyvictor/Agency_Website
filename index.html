@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getech Solution | Digital Presence for Nigerian Businesses</title>
+  <meta name="description" content="Getech Solution helps Nigerian businesses and brands build powerful digital presence — websites, Google profiles, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <style>
+    /* Icon sizing system */
+    .icon-sm  { font-size: 18px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; }
+    .icon-md  { font-size: 24px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; }
+    .icon-lg  { font-size: 32px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; }
+    .icon-xl  { font-size: 40px; line-height: 1; display: inline-flex; align-items: center; justify-content: center; }
+
+    /* Theme toggle icon states */
+    .theme-toggle .ti { font-size: 18px; }
+
+    /* Value card icon */
+    .value-icon { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 12px; margin-bottom: 1rem; }
+    .value-icon .ti { font-size: 26px; }
+
+    /* Service card icon */
+    .service-icon { display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 14px; margin-bottom: 1.25rem; }
+    .service-icon .ti { font-size: 28px; }
+
+    /* Contact icon */
+    .contact-icon { display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; flex-shrink: 0; }
+    .contact-icon .ti { font-size: 22px; }
+
+    /* Send button icon */
+    .wa-icon .ti { font-size: 20px; vertical-align: -3px; }
+
+    /* Footer heart */
+    .footer-heart .ti { font-size: 15px; vertical-align: -2px; color: #e05252; }
+
+    /* Quote mark stays as pure CSS/text — no icon needed */
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-mark">G</span>
+        <span class="logo-text">Getech<span class="logo-accent">.</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <span class="theme-icon sun"><i class="ti ti-sun" aria-hidden="true"></i></span>
+          <span class="theme-icon moon"><i class="ti ti-moon" aria-hidden="true"></i></span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get Started</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">✕</button>
+    <nav class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#pricing" class="mobile-nav-link">Pricing</a>
+      <a href="#testimonials" class="mobile-nav-link">Testimonials</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary mobile-nav-cta">Get Started →</a>
+  </div>
+
+  <main>
+
+    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <svg class="pulse-svg" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+          <polyline class="pulse-line" points="0,150 100,150 160,60 220,240 280,90 340,210 400,150 600,150 660,50 720,250 780,100 840,200 900,150 1200,150" fill="none" stroke-width="2"/>
+        </svg>
+        <div class="hero-grid" aria-hidden="true"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-eyebrow">
+          <span class="dot-pulse"></span>
+          Web Agency ·  Nigeria
+        </div>
+        <h1 class="hero-headline">
+          Your Business<br/>Deserves to Be<br/><span class="headline-accent">Found Online.</span>
+        </h1>
+        <p class="hero-sub">
+          We build websites, Google Business Profiles, and digital experiences that turn visitors into customers — for Nigerian brands ready to grow.
+        </p>
+        <div class="hero-actions">
+          <a href="#pricing" class="btn btn-primary">See Our Packages</a>
+          <a href="#about" class="btn btn-ghost">How We Work →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Brands Served</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Core Packages</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Client Ownership</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">About Getech Solution</span>
+          <h2 class="section-title">We Build the Digital Layer<br/>Your Business Needs</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="about-lead">
+              Getech Solution is a web agency built for Nigerian entrepreneurs, SMEs, and growing brands. We understand what it means to compete in today's market — and we know that your online presence is your first impression.
+            </p>
+            <p class="about-body">
+              From responsive websites and Google Business Profile setups to WhatsApp-integrated shops, we deliver complete digital solutions that are professional, functional, and built to convert. We don't just hand you a website — we give you a tool that works for your business every single day.
+            </p>
+            <p class="about-body">
+              Our approach is simple: understand your business, build what fits, and make sure you own it. No hidden recurring fees. No complicated tech jargon. Just clean, modern digital presence — done right.
+            </p>
+          </div>
+          <div class="about-values">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="ti ti-target" aria-hidden="true"></i>
+              </div>
+              <h3 class="value-title">Built for Nigeria</h3>
+              <p class="value-desc">We understand the local market, local customers, and what it takes to convert traffic into real business revenue here.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="ti ti-bolt" aria-hidden="true"></i>
+              </div>
+              <h3 class="value-title">Fast Delivery</h3>
+              <p class="value-desc">We move fast without cutting corners. Most projects are live within days, not months.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="ti ti-lock" aria-hidden="true"></i>
+              </div>
+              <h3 class="value-title">You Own It</h3>
+              <p class="value-desc">Every website we build belongs entirely to you. No lock-ins. No holding your domain hostage. Full ownership, always.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="ti ti-device-mobile" aria-hidden="true"></i>
+              </div>
+              <h3 class="value-title">Mobile First</h3>
+              <p class="value-desc">Your customers are on their phones. Every site we build looks sharp and loads fast on any device.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SERVICES TEASER ═══════════════════════════ -->
+    <section class="section services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">What We Do</span>
+          <h2 class="section-title">Everything Your Digital<br/>Presence Needs</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ti ti-world" aria-hidden="true"></i>
+            </div>
+            <h3 class="service-title">Website Development</h3>
+            <p class="service-desc">From one-page sites to full custom platforms — responsive, fast, and built to convert.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ti ti-map-pin" aria-hidden="true"></i>
+            </div>
+            <h3 class="service-title">Google Business Profile</h3>
+            <p class="service-desc">Get found on Google Maps. We set up and optimize your profile so local customers discover you first.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+            </div>
+            <h3 class="service-title">WhatsApp Integration</h3>
+            <p class="service-desc">Turn your website into a lead machine with direct WhatsApp checkout and inquiry buttons.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ti ti-shopping-cart" aria-hidden="true"></i>
+            </div>
+            <h3 class="service-title">Online Shop Setup</h3>
+            <p class="service-desc">Showcase your products with a gallery and WhatsApp checkout. Start selling online without the tech headache.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ti ti-mail" aria-hidden="true"></i>
+            </div>
+            <h3 class="service-title">Professional Email</h3>
+            <p class="service-desc">Look credible with a business email like you@yourbrand.com — included in our Premium plan.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="ti ti-chart-bar" aria-hidden="true"></i>
+            </div>
+            <h3 class="service-title">SEO Optimization</h3>
+            <p class="service-desc">Get ranked on Google organically. We help your business show up when people search for what you offer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PRICING ═══════════════════════════ -->
+    <section class="section pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Transparent Pricing</span>
+          <h2 class="section-title">Simple Packages.<br/>No Surprises.</h2>
+          <p class="section-desc">All prices in Nigerian Naira (₦). Domain registration fees billed separately.</p>
+        </div>
+
+        <!-- Toggle -->
+        <div class="pricing-toggle">
+          <button class="toggle-btn active" id="togglePackages">Packages</button>
+          <button class="toggle-btn" id="toggleMaintenance">Maintenance</button>
+        </div>
+
+        <!-- Main Packages -->
+        <div class="pricing-grid" id="packagesGrid">
+          <!-- Basic -->
+          <div class="pricing-card">
+            <div class="plan-badge">Starter</div>
+            <h3 class="plan-name">Basic</h3>
+            <div class="plan-price">
+              <span class="price-currency">₦</span>
+              <span class="price-amount">50,000</span>
+            </div>
+            <p class="plan-desc">Perfect for businesses just stepping online</p>
+            <ul class="plan-features">
+              <li class="feat yes">Google Business Profile Setup</li>
+              <li class="feat yes">One-Page Responsive Website</li>
+              <li class="feat yes">WhatsApp Integration</li>
+              <li class="feat yes">Google Maps Integration</li>
+              <li class="feat yes">Social Media Integration</li>
+              <li class="feat yes">Basic Photo Gallery</li>
+              <li class="feat yes">WhatsApp Shopping Cart</li>
+              <li class="feat note">Free .vercel.com Domain</li>
+              <li class="feat yes">Free Hosting (Vercel)</li>
+              <li class="feat no">Professional Email</li>
+              <li class="feat no">CMS / Admin Dashboard</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline plan-btn">Get Basic</a>
+          </div>
+
+          <!-- Growth (Featured) -->
+          <div class="pricing-card featured">
+            <div class="plan-badge featured-badge">Most Popular</div>
+            <h3 class="plan-name">Growth</h3>
+            <div class="plan-price">
+              <span class="price-currency">₦</span>
+              <span class="price-amount">70,000</span>
+            </div>
+            <p class="plan-desc">For businesses ready to grow their digital footprint</p>
+            <ul class="plan-features">
+              <li class="feat yes">Google Business Profile Setup</li>
+              <li class="feat yes">Up to 5-Page Website</li>
+              <li class="feat yes">WhatsApp Integration</li>
+              <li class="feat yes">Google Maps Integration</li>
+              <li class="feat yes">Social Media Integration</li>
+              <li class="feat yes">Advanced Photo Gallery</li>
+              <li class="feat yes">WhatsApp Shopping Cart</li>
+              <li class="feat yes">Client's Choice Domain</li>
+              <li class="feat yes">Free Hosting (Vercel)</li>
+              <li class="feat no">Professional Email</li>
+              <li class="feat no">CMS / Admin Dashboard</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary plan-btn">Get Growth</a>
+          </div>
+
+          <!-- Premium -->
+          <div class="pricing-card">
+            <div class="plan-badge">Enterprise</div>
+            <h3 class="plan-name">Premium</h3>
+            <div class="plan-price">
+              <span class="price-currency">₦</span>
+              <span class="price-amount">150k+</span>
+            </div>
+            <p class="plan-desc">Full-power custom solution for serious brands</p>
+            <ul class="plan-features">
+              <li class="feat yes">Google Business Profile Setup</li>
+              <li class="feat yes">Custom Website (Unlimited Pages)</li>
+              <li class="feat yes">WhatsApp Integration</li>
+              <li class="feat yes">Google Maps Integration</li>
+              <li class="feat yes">Social Media Integration</li>
+              <li class="feat yes">Unlimited Photo Gallery</li>
+              <li class="feat yes">WhatsApp Shopping Cart</li>
+              <li class="feat yes">Client's Choice Domain</li>
+              <li class="feat yes">Premium Managed Hosting</li>
+              <li class="feat yes">Professional Business Email</li>
+              <li class="feat yes">CMS + Admin Dashboard</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline plan-btn">Get Premium</a>
+          </div>
+        </div>
+
+        <!-- Maintenance Packages (hidden by default) -->
+        <div class="pricing-grid maintenance-grid hidden" id="maintenanceGrid">
+          <div class="pricing-card">
+            <div class="plan-badge">Starter</div>
+            <h3 class="plan-name">Basic</h3>
+            <div class="plan-price-row">
+              <div class="plan-price">
+                <span class="price-currency">₦</span><span class="price-amount">5,000</span>
+                <span class="price-period">/mo</span>
+              </div>
+              <div class="plan-price alt">
+                <span class="price-currency">₦</span><span class="price-amount">50,000</span>
+                <span class="price-period">/yr</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li class="feat yes">Content Updates</li>
+              <li class="feat yes">Image Uploads</li>
+              <li class="feat yes">Product Updates</li>
+              <li class="feat yes">Bug Fixes</li>
+              <li class="feat note">Limited Technical Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline plan-btn">Get Basic</a>
+          </div>
+          <div class="pricing-card featured">
+            <div class="plan-badge featured-badge">Recommended</div>
+            <h3 class="plan-name">Growth</h3>
+            <div class="plan-price-row">
+              <div class="plan-price">
+                <span class="price-currency">₦</span><span class="price-amount">8,000</span>
+                <span class="price-period">/mo</span>
+              </div>
+              <div class="plan-price alt">
+                <span class="price-currency">₦</span><span class="price-amount">80,000</span>
+                <span class="price-period">/yr</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li class="feat yes">Content Updates</li>
+              <li class="feat yes">Image Uploads</li>
+              <li class="feat yes">Product Updates</li>
+              <li class="feat yes">Bug Fixes</li>
+              <li class="feat note">Limited Technical Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary plan-btn">Get Growth</a>
+          </div>
+          <div class="pricing-card">
+            <div class="plan-badge">Enterprise</div>
+            <h3 class="plan-name">Premium</h3>
+            <div class="plan-price-row">
+              <div class="plan-price">
+                <span class="price-currency">₦</span><span class="price-amount">12,000</span>
+                <span class="price-period">/mo</span>
+              </div>
+              <div class="plan-price alt">
+                <span class="price-currency">₦</span><span class="price-amount">120,000</span>
+                <span class="price-period">/yr</span>
+              </div>
+            </div>
+            <ul class="plan-features">
+              <li class="feat yes">Content Updates</li>
+              <li class="feat yes">Image Uploads</li>
+              <li class="feat yes">Product Updates</li>
+              <li class="feat yes">Bug Fixes</li>
+              <li class="feat yes">Hosting Management</li>
+              <li class="feat yes">Unlimited Technical Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline plan-btn">Get Premium</a>
+          </div>
+        </div>
+
+        <!-- Add-ons -->
+        <div class="addons-section">
+          <h3 class="addons-title">Optional Add-on Services</h3>
+          <div class="addons-grid">
+            <div class="addon-item"><span class="addon-name">Logo Design / Redesign</span><span class="addon-price">₦20,000</span></div>
+            <div class="addon-item"><span class="addon-name">Business Card Design</span><span class="addon-price">₦10,000</span></div>
+            <div class="addon-item"><span class="addon-name">QR Code Generation</span><span class="addon-price">₦5,000</span></div>
+            <div class="addon-item"><span class="addon-name">Payment Gateway Integration</span><span class="addon-price">₦30,000</span></div>
+            <div class="addon-item"><span class="addon-name">Live Chat Integration</span><span class="addon-price">₦20,000</span></div>
+            <div class="addon-item"><span class="addon-name">Chatbot Integration</span><span class="addon-price">From ₦50,000</span></div>
+            <div class="addon-item"><span class="addon-name">Search Engine Optimization</span><span class="addon-price">₦50,000</span></div>
+          </div>
+          <p class="addons-note">* Domain registration fees for custom domains (.com, .com.ng, .ng, etc.) are billed separately and renewable to the domain provider.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ TESTIMONIALS ═══════════════════════════ -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Client Stories</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p class="testimonial-text">Getech Solution transformed how my fashion brand appears online. Within a week, I had a beautiful website with my WhatsApp linked directly. Orders started coming in almost immediately.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AM</div>
+              <div class="author-info">
+                <span class="author-name">Amaka M.</span>
+                <span class="author-role">Fashion Brand Owner, Lagos</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p class="testimonial-text">My Google Business Profile was just sitting there with no traffic. After Getech set it up properly, new customers are now finding my restaurant every single day. The ROI has been incredible.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">CJ</div>
+              <div class="author-info">
+                <span class="author-name">Chidi J.</span>
+                <span class="author-role">Restaurant Owner, Port Harcourt</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p class="testimonial-text">Professional, fast, and they actually listen to what you want. My e-commerce site was live in days, and the team walked me through everything. Highly recommend to any business owner.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">NK</div>
+              <div class="author-info">
+                <span class="author-name">Ngozi K.</span>
+                <span class="author-role">Online Retailer, Abuja</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote-mark">"</div>
+            <p class="testimonial-text">I was skeptical at first but Getech delivered beyond expectation. The website is clean, mobile-friendly, and my business email finally looks professional. Worth every naira.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">BO</div>
+              <div class="author-info">
+                <span class="author-name">Bola O.</span>
+                <span class="author-role">Consulting Firm, Ibadan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Let's Talk</span>
+          <h2 class="section-title">Ready to Build Your<br/>Digital Presence?</h2>
+          <p class="section-desc">Tell us about your business and the package you're interested in. We'll get back to you within 24 hours.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <span class="contact-icon">
+                <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+              </span>
+              <div>
+                <span class="contact-label">WhatsApp</span>
+                <a href="https://wa.me/+2349138183096" class="contact-value" target="_blank" rel="noopener">Chat with us directly</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <i class="ti ti-mail" aria-hidden="true"></i>
+              </span>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:victoremmanuelitopa@gmail.com" class="contact-value">victoremmanuelitopa@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <i class="ti ti-map-pin" aria-hidden="true"></i>
+              </span>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Benin, Ebonyi, Nigeria</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">
+                <i class="ti ti-clock" aria-hidden="true"></i>
+              </span>
+              <div>
+                <span class="contact-label">Response Time</span>
+                <span class="contact-value">Within 24 hours</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <div class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="fullName">Full Name</label>
+                  <input class="form-input" type="text" id="fullName" placeholder="Your full name" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone / WhatsApp</label>
+                  <input class="form-input" type="tel" id="phone" placeholder="+234 800 000 0000" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="businessName">Business Name</label>
+                <input class="form-input" type="text" id="businessName" placeholder="Your business or brand name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="packageChoice">Interested Package</label>
+                <select class="form-input form-select" id="packageChoice">
+                  <option value="">— Select a package —</option>
+                  <option value="Basic">Basic — ₦50,000</option>
+                  <option value="Growth">Growth — ₦70,000</option>
+                  <option value="Premium">Premium — From ₦150,000</option>
+                  <option value="Maintenance">Maintenance Plan</option>
+                  <option value="Add-on">Add-on Service Only</option>
+                  <option value="Not sure">Not sure yet</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Tell us about your business</label>
+                <textarea class="form-input form-textarea" id="message" placeholder="What does your business do? What are you looking to achieve online?" rows="4"></textarea>
+              </div>
+              <button class="btn btn-primary btn-full btn-wa" id="sendBtn" type="button">
+                <span class="wa-icon"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i></span> Send via WhatsApp
+              </button>
+              <p class="form-note">Clicking this will open WhatsApp with your message pre-filled. No data is stored.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-mark">G</span>
+          <span class="logo-text">Getech<span class="logo-accent">.</span></span>
+        </a>
+        <p class="footer-tagline">Your digital presence, done right.</p>
+      </div>
+      <div class="footer-links-group">
+        <span class="footer-links-title">Navigate</span>
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#pricing" class="footer-link">Pricing</a>
+        <a href="#testimonials" class="footer-link">Testimonials</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+      <div class="footer-links-group">
+        <span class="footer-links-title">Packages</span>
+        <a href="#pricing" class="footer-link">Basic — ₦50,000</a>
+        <a href="#pricing" class="footer-link">Growth — ₦70,000</a>
+        <a href="#pricing" class="footer-link">Premium — From ₦150k</a>
+        <a href="#pricing" class="footer-link">Maintenance Plans</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>© 2025 Getech Solution. All rights reserved.</span>
+        <span>Built with <span class="footer-heart"><i class="ti ti-heart-filled" aria-hidden="true"></i></span> in Nigeria</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="ti ti-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="./script.js"></script>
+</body>
+</html>
