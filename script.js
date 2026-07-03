@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
       pkg ? `*Package:* ${pkg}` : null,
       message ? `*Message:* ${message}` : null,
       ``,
-      `_Sent from getechsolution.com_`,
+      `_Sent from getechsolution_`,
     ]
       .filter(Boolean)
       .join("\n");
