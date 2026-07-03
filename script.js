@@ -5,9 +5,9 @@
 ═══════════════════════════════════════════════════════ */
 
 // ── Your WhatsApp number (Nigerian format, no + or spaces) ──
-const WHATSAPP_NUMBER = "+2349138183096"; // TODO: Replace with your actual number
+const WHATSAPP_NUMBER = "+2347061992109"; // TODO: Replace with your actual number
 // ── Your fallback email ──
-const CONTACT_EMAIL = "victoremmanuelitopa@gmail.com"; // TODO: Replace with your actual email
+const CONTACT_EMAIL = "gtechandsolutions@gmail.com"; // TODO: Replace with your actual email
 
 document.addEventListener("DOMContentLoaded", () => {
   /* ════════════════════════════════════════
