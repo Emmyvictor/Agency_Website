@@ -48,6 +48,130 @@
     .footer-heart .ti { font-size: 15px; vertical-align: -2px; color: #e05252; }
 
     /* Quote mark stays as pure CSS/text — no icon needed */
+
+    /* ─── Trusted By Section ─── */
+    .trusted-section {
+      padding: 4rem 0;
+      border-top: 1px solid var(--border-color, rgba(255,255,255,0.06));
+      background: var(--bg-secondary, #0d0d0d);
+    }
+
+    .trusted-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .trusted-header .section-eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted, #888);
+      margin-bottom: 0.5rem;
+    }
+
+    .trusted-header h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text-primary, #fff);
+      margin: 0;
+    }
+
+    .trusted-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .trusted-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem 0.75rem;
+      background: var(--bg-card, rgba(255,255,255,0.03));
+      border-radius: 12px;
+      border: 1px solid var(--border-color, rgba(255,255,255,0.06));
+      transition: border-color 0.25s ease, background 0.25s ease;
+      text-decoration: none;
+      min-height: 70px;
+    }
+
+    .trusted-item:hover {
+      border-color: var(--accent-color, #6c63ff);
+      background: var(--bg-card-hover, rgba(108,99,255,0.06));
+    }
+
+    .trusted-item .logo-text {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-primary, #fff);
+      letter-spacing: 0.02em;
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    .trusted-item .logo-text .highlight {
+      color: var(--accent-color, #6c63ff);
+    }
+
+    .trusted-item .logo-text .sub {
+      display: block;
+      font-size: 0.6rem;
+      font-weight: 400;
+      color: var(--text-muted, #888);
+      margin-top: 0.15rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* Mobile: 4 in a row */
+    @media (max-width: 640px) {
+      .trusted-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.75rem;
+      }
+
+      .trusted-item {
+        padding: 0.85rem 0.4rem;
+        min-height: 56px;
+        border-radius: 8px;
+      }
+
+      .trusted-item .logo-text {
+        font-size: 0.6rem;
+      }
+
+      .trusted-item .logo-text .sub {
+        font-size: 0.5rem;
+      }
+
+      .trusted-header h2 {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .trusted-grid {
+        gap: 0.5rem;
+      }
+
+      .trusted-item {
+        padding: 0.6rem 0.25rem;
+        min-height: 48px;
+      }
+
+      .trusted-item .logo-text {
+        font-size: 0.5rem;
+      }
+
+      .trusted-item .logo-text .sub {
+        font-size: 0.4rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -435,50 +559,81 @@
           <h2 class="section-title">What Our Clients Say</h2>
         </div>
         <div class="testimonials-grid">
+          <!-- Obiblo Music -->
           <div class="testimonial-card">
             <div class="quote-mark">"</div>
-            <p class="testimonial-text">Getech Solution transformed how my fashion brand appears online. Within a week, I had a beautiful website with my WhatsApp linked directly. Orders started coming in almost immediately.</p>
+            <p class="testimonial-text">Obiblo Music transformed how we approach liturgical music. Getech Solution built us a stunning website that showcases our Mass settings and choral works. Our online presence now matches the excellence of our music ministry.</p>
             <div class="testimonial-author">
-              <div class="author-avatar">AM</div>
+              <div class="author-avatar">OM</div>
               <div class="author-info">
-                <span class="author-name">Amaka M.</span>
-                <span class="author-role">Fashion Brand Owner, Lagos</span>
+                <span class="author-name">Obiblo Music</span>
+                <span class="author-role">Gospel Music Collective, Abuja</span>
               </div>
             </div>
           </div>
+          <!-- Yela Foundation -->
           <div class="testimonial-card">
             <div class="quote-mark">"</div>
-            <p class="testimonial-text">My Google Business Profile was just sitting there with no traffic. After Getech set it up properly, new customers are now finding my restaurant every single day. The ROI has been incredible.</p>
+            <p class="testimonial-text">As a foundation supporting emerging artists, we needed a website that reflects our mission. Getech Solution delivered a beautiful platform that has helped us reach more artists and secure more funding for our programs.</p>
             <div class="testimonial-author">
-              <div class="author-avatar">CJ</div>
+              <div class="author-avatar">YF</div>
               <div class="author-info">
-                <span class="author-name">Chidi J.</span>
-                <span class="author-role">Restaurant Owner, Port Harcourt</span>
+                <span class="author-name">Yela Art Foundation</span>
+                <span class="author-role">Non-Profit, Benin City</span>
               </div>
             </div>
           </div>
+          <!-- BiteEase Cafe -->
           <div class="testimonial-card">
             <div class="quote-mark">"</div>
-            <p class="testimonial-text">Professional, fast, and they actually listen to what you want. My e-commerce site was live in days, and the team walked me through everything. Highly recommend to any business owner.</p>
+            <p class="testimonial-text">BiteEase Cafe in Lokoja now has a mouth-watering online presence! Getech Solution created a website that makes our customers crave our shakshuka and waffles before they even walk in. Our orders have increased significantly.</p>
             <div class="testimonial-author">
-              <div class="author-avatar">NK</div>
+              <div class="author-avatar">BC</div>
               <div class="author-info">
-                <span class="author-name">Ngozi K.</span>
-                <span class="author-role">Online Retailer, Abuja</span>
+                <span class="author-name">BiteEase Cafe</span>
+                <span class="author-role">Café &amp; Restaurant, Lokoja</span>
               </div>
             </div>
           </div>
+          <!-- Peterfleming Art -->
           <div class="testimonial-card">
             <div class="quote-mark">"</div>
-            <p class="testimonial-text">I was skeptical at first but Getech delivered beyond expectation. The website is clean, mobile-friendly, and my business email finally looks professional. Worth every naira.</p>
+            <p class="testimonial-text">Peterfleming Art is where art meets legacy, and our website needed to reflect that. Getech Solution built us a platform that showcases our gallery, academy, and studio with elegance and sophistication.</p>
             <div class="testimonial-author">
-              <div class="author-avatar">BO</div>
+              <div class="author-avatar">PA</div>
               <div class="author-info">
-                <span class="author-name">Bola O.</span>
-                <span class="author-role">Consulting Firm, Ibadan</span>
+                <span class="author-name">Peterfleming Art</span>
+                <span class="author-role">Gallery &amp; Academy, Benin City</span>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ TRUSTED BY ═══════════════════════════ -->
+    <section class="trusted-section">
+      <div class="container">
+        <div class="trusted-header">
+          <span class="section-eyebrow">Trusted By</span>
+          <h2>Brands That Trust Getech Solution</h2>
+        </div>
+        <div class="trusted-grid">
+          <a href="https://obiblomusic.com" target="_blank" rel="noopener" class="trusted-item">
+            <img src="https://www.google.com/s2/favicons?domain=obiblomusic.com&sz=128" alt="Obiblo Music" class="trusted-logo" loading="lazy" />
+          </a>
+          <a href="https://yelafoundation.com" target="_blank" rel="noopener" class="trusted-item">
+            <img src="https://www.google.com/s2/favicons?domain=yelafoundation.com&sz=128" alt="Yela Foundation" class="trusted-logo" loading="lazy" />
+          </a>
+          <a href="https://biteease.ng" target="_blank" rel="noopener" class="trusted-item">
+            <img src="https://www.google.com/s2/favicons?domain=biteease.ng&sz=128" alt="BiteEase" class="trusted-logo" loading="lazy" />
+          </a>
+          <a href="https://www.moonlightumbrellagallery.com" target="_blank" rel="noopener" class="trusted-item">
+            <img src="https://www.google.com/s2/favicons?domain=moonlightumbrellagallery.com&sz=128" alt="Moonlight Umbrella Gallery" class="trusted-logo" loading="lazy" />
+          </a>
+          <a href="https://peterflemingart.com" target="_blank" rel="noopener" class="trusted-item">
+            <img src="https://www.google.com/s2/favicons?domain=peterflemingart.com&sz=128" alt="Peter Fleming Art" class="trusted-logo" loading="lazy" />
+          </a>
         </div>
       </div>
     </section>
